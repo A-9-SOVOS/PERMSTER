@@ -48,4 +48,4 @@ Feel free to submit issues and pull requests to improve the extension.
 
 ## License
 
-[Add your chosen license here]
+A-9 Open Source

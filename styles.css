@@ -1,5 +1,4 @@
-// === styles.css ===
-/* Minimal, unobtrusive badge styling */
+/* Percentage badge styling */
 .xlvp-badge {
   margin-left: 8px;
   padding: 2px 6px;
@@ -8,10 +7,85 @@
   line-height: 1.2;
   border: 1px solid currentColor;
   backdrop-filter: saturate(120%);
-  opacity: .95;
+  opacity: 1;
+  text-shadow: 0 0 1px rgb(255, 0, 179);
 }
 
-/* optional: slight shadow to keep readable on busy media */
-.xlvp-badge { text-shadow: 0 0 1px rgba(0,0,0,.25); }
+/* Community notes badge styling */
+.note-badge-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 12px;
+  padding: 0 4px;
+}
+
+.community-note-badge {
+  font-size: 16px;
+  cursor: help;
+  opacity: 1;
+  color: rgb(255, 0, 0);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 4px;
+}
+
+.community-note-badge:hover {
+  opacity: 1;
+}
+
+/* Tooltip styling */
+.community-note-badge::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: max-content;
+  max-width: 320px;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  /* Solid, opaque background to avoid transparency */
+  background-color: rgba(20, 20, 20, 0.999) !important;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.4;
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 0.16s ease;
+  pointer-events: none;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  box-shadow: 0 6px 18px rgb(255, 0, 0);
+  z-index: 10001;
+}
+
+.community-note-badge:hover::after {
+  visibility: visible;
+  opacity: 1 !important;
+}
+
+/* Floating tooltip appended to document.body to avoid ancestor clipping */
+.xlvp-floating-tooltip {
+  position: fixed !important;
+  background-color: #272C30 !important;
+  color: #fff !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  max-width: 420px !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.5) !important;
+  z-index: 2147483646 !important;
+  pointer-events: auto !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+}
+
+/* When a floating tooltip exists, hide the inline pseudo-element to avoid duplicate UI */
+.community-note-badge.xlvp-has-floating::after {
+  display: none !important;
+}
 
 

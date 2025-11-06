@@ -1,5 +1,7 @@
 # PERMSTER - Twitter Engagement Metrics Extension
 
+**Version:** 0.1.7  
+
 A browser extension that adds engagement metrics to tweets by displaying the likes-to-views ratio (engagement rate) directly in your Twitter/X feed.
 
 ## Features

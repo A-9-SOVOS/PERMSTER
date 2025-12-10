@@ -2,10 +2,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)
-![License](https://img.shields.io/badge/license-Arc--9%20Open%20Royalty-green.svg)
-![Chrome](https://img.shields.io/badge/chrome-supported-brightgreen.svg)
-![Edge](https://img.shields.io/badge/edge-supported-brightgreen.svg)
+
 
 **A browser extension that adds engagement metrics to tweets by displaying the likes‑to‑views ratio (engagement rate) directly in your Twitter/X feed.**
 
@@ -14,24 +11,6 @@
 </div>
 
 ---
-
-## ✨ Key Features
-
-The extension has been updated with several new capabilities:
-
-The extension has been updated with several new capabilities:
-
-- 📊 **Engagement badge** – shows the likes‑to‑views percentage next to each tweet
-- 🛠️ **Floating tooltip** – community‑note text now appears in a floating tooltip that stays visible even when the tweet is scrolled, providing a better reading experience
-- 🎨 **Improved theme detection** – uses Twitter's internal `data‑theme` attribute for reliable colour selection across Light, Dim and Lights‑Out themes
-- 🔢 **Enhanced number parsing** – correctly parses Western formats (`K`, `M`, `B`) **and** East‑Asian units (`万`, `億`, `亿`)
-- 🌓 **Full theme support** – badge colour automatically adapts to the current Twitter theme
-- ⚡ **Efficient performance** – only processes tweets that become visible using an IntersectionObserver
-- 🧩 **Robust community‑note handling** – extracts note text more reliably, hides the original note element, and adds a clickable badge that opens the original note URL
-
----
-
-## 📋 Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
@@ -43,29 +22,23 @@ The extension has been updated with several new capabilities:
 
 ---
 
-## 🎯 Features
-
 ### Core Features
 
 - 📊 **Engagement Metrics**: Displays likes-to-views ratio as a percentage next to each tweet
-- 📈 **Hover Details**: Shows exact likes and views counts on hover via floating tooltip
 - 🎨 **Theme Support**: Supports all Twitter themes (light, dim, lights-out)
 - 🔢 **Multi-Format Parsing**: Handles various number formats, including East-Asian units (万, 億, 亿)
-- 📝 **Community Notes**: Clickable φ badge with floating tooltip for better note reading experience
-- 🔒 **Privacy-First**: All data collection is optional and stored locally only
-- ⚡ **Performance Optimized**: Uses IntersectionObserver for efficient processing
+- 📝 **Community Notes**: Replaced with a clickable φ badge and tooltip for better note reading experience
+- 🔒 **Data Control**: Opt in data collection locally stores analitical data. It's your data!
 
 ---
 
 ## 🚀 Installation
 
-### For Chrome/Edge Users
-
 1. Download the extension files from this repository
-2. Open your browser's extensions page:
+2. Open your browser's extensions page (for example):
    - **Chrome**: Navigate to `chrome://extensions/`
    - **Edge**: Navigate to `edge://extensions/`
-3. Enable **Developer mode** (toggle in top right)
+3. Enable **Developer mode** (usually toggle in top right)
 4. Click **Load unpacked** and select the extension directory
 5. Navigate to Twitter/X and enjoy enhanced tweet metrics!
 
@@ -75,15 +48,7 @@ The extension has been updated with several new capabilities:
 
 ## ⚙️ How It Works
 
-The extension runs on the Twitter/X website and calculates the engagement rate (likes/views ratio) for each tweet in your feed. The ratio is displayed with a `߷` symbol next to the tweet's engagement metrics.
-
-### 📊 Engagement Rate Display Rules
-
-| Engagement Rate | Display Format | Example |
-|-----------------|----------------|---------|
-| **≥ 10%** | 1 decimal place | `12.3%` |
-| **1% - 10%** | 2 decimal places | `1.23%` |
-| **< 1%** | 3 decimal places | `0.123%` |
+The extension runs on the Twitter/X website and calculates the engagement rate (likes/views ratio) for each tweet in your feed. The ratio is displayed with next to the tweet's engagement metrics. Further features can be found in the plugins menu.
 
 ### 📝 Community Notes Enhancement
 
@@ -97,23 +62,15 @@ When a tweet contains a community note:
 
 ## 📈 Statistics Tracking & Local Data
 
-### 📂 Storage & File Management
-
 - **Default Location**: `Downloads/XData/xd.csv` (fallback to Downloads folder)
-- **Auto-Saving**: Saves periodically and on-demand when requested
-- **File Format**: CSV with comprehensive metrics per user/category
+- **Auto-Saving**: When enabled data saves periodically
+- **Per-User Statistics**: Engagement scores, averages, post counts, last-seen timestamps  
+- **Content Categories**: Post length buckets (short/mid/long/extended) and media indicators  
+- **Engagement Metrics**: Total likes, views, comments with min/max/avg calculations  
+- **Performance Data**: Post processing counts and save intervals  
 - **Persistence**: Aggregated stats saved to extension storage for continuity across reloads
 
-### 📊 Tracked Metrics
-
-The extension collects the following data (only when data collection is enabled):
-
-- **Per-User Statistics**: Engagement scores, averages, post counts, last-seen timestamps
-- **Content Categories**: Post length buckets (short/mid/long/extended) and media indicators  
-- **Engagement Metrics**: Total likes, views, comments with min/max/avg calculations
-- **Performance Data**: Post processing counts and save intervals
-
-> **Important**: The UI filtering setting (minimum % likes per views) only hides posts in the browser UI — the extension still records metrics for filtered posts so they can be saved locally if you choose to enable data collection.
+> **Note**: The UI filtering setting (minimum % likes per views) only hides posts in the browser UI — the extension still records metrics for filtered posts so they can be saved locally if you choose to enable data collection.
 
 ---
 
@@ -214,9 +171,13 @@ Source files include Arc‑9 header comments pointing to the `LICENSE` file for 
 
 <div align="center">
 
+![Tip](Tip.png)
+
 **Made with ❤️ by [A-9-SOVOS](https://github.com/A-9-SOVOS)**
 
-[![License: Arc-9](https://img.shields.io/badge/License-Arc--9%20Open%20Royalty-green.svg)](LICENSE)
+
+
+[![License: Arc-9](https://img.shields.io/badge/License-Arc-9%20Open%20Royalty-green.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](#)
 [![Chrome](https://img.shields.io/badge/chrome-supported-brightgreen.svg)](#)
 

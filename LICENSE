@@ -1,46 +1,109 @@
-Arc-9 Open Royalty Agreement
-Version 1.0
+# Arc-9 Open Royalty Agreement
+## Version 1.4
 
-1. Definitions
-   1.1 "Licensed Material" means the code, algorithms, documentation, designs, methods and any other materials (source or binary) distributed with the project to which this License is attached.
-   1.2 "Licensee" means any person or entity that receives the Licensed Material and accepts the terms of this License.
-   1.3 "Licensor" means the copyright owner or other party granting rights under this License (hereinafter the originator identified in the project). For this repository, the Licensor is The Arc-9 Foundation unless otherwise specified.
-   1.4 "Gross Revenue" means the total revenue received by the Licensee (or a sublicensee) from the sale, licensing, distribution, hosting, commercialization or other monetization of products or services that incorporate, derive from, or are substantially enabled by the Licensed Material, without deduction for costs, taxes, or other expenses.
+## 1. Definitions
 
-2. Grant of License
-   2.1 Subject to the terms of this Agreement, the Licensor hereby grants to you (the Licensee) a worldwide, non-exclusive, royalty-bearing license to use, reproduce, modify, distribute, and sublicense the Licensed Material, subject to the royalty and obligations set below.
+**Licensed Material** means all code, algorithms, documentation, designs, methods, and materials distributed with this project, in source or binary form.
 
-3. Royalty and Payment
-   3.1 Royalty Rate: A royalty equal to four percent (4%) of Gross Revenue attributable to the Licensee's commercial use of the Licensed Material (the "Royalty") is payable to the Licensor.
-   3.2 Triggering Events: A Royalty is due whenever a company, organization, or commercial entity receives Gross Revenue from a product or service that incorporates, depends on, or otherwise benefits from the Licensed Material. Individual users and developers using the Licensed Material for personal, hobbyist, academic, or non-commercial purposes—regardless of whether they are later monetized through unrelated channels—are expressly excluded from Royalty obligations. Only entities that commercialize the Licensed Material itself (or products/services substantially built upon it) owe royalties.
-   3.3 Accounting and Payment: Licensee shall keep accurate books and records of all amounts that are or may be subject to Royalty. Royalty payments are due on a quarterly basis within thirty (30) days after the end of each calendar quarter, accompanied by a statement showing Gross Revenue and Royalty calculation for that period.
-   3.4 Sublicensing: A Licensee may grant sublicenses but shall remain responsible for payment of Royalty on revenues received by its sublicensees (and shall require its sublicensees to remit their portion to the Licensee so that the Licensee may satisfy the obligations hereunder).
+**Licensee** means any person or entity using the Licensed Material.
 
-4. Attribution and Notices
-   4.1 Attribution: The Licensee shall preserve any copyright and attribution notices the Licensor places in the Licensed Material, and shall include the following notice in documentation and about or legal pages for any commercial product or service that uses the Licensed Material: "Contains software or methods provided under the Arc-9 Open Royalty Agreement (The Arc-9 Foundation)."
-   4.2 Notices & Contact: The Licensee shall send all Royalty statements and payments, and any notices or correspondence related to this License, to the Licensor at the contact details provided in the project or otherwise supplied by the Licensor.
+**Licensor** means the copyright owner granting rights under this license. For this repository, the Licensor is The Arc-9 Foundation unless otherwise specified.
 
-5. Modifications and Improvements
-   5.1 The Licensee may modify the Licensed Material. Substantial derivative versions of the Licensed Material distributed commercially remain subject to the Royalty obligations when those versions are monetized.
+**Gross Revenue** means all revenue received by the Licensee (or any sublicensee) from any product or service in which the Licensed Material is incorporated, used, or relied upon in any measurable way. Gross Revenue is interpreted consistent with how the Licensee reports revenue to their primary tax authority. If the Licensed Material contributes at all to the functionality, performance, capability, or revenue of a commercial offering, that entire offering's revenue is subject to royalty calculation. There is no de minimis threshold.
 
-6. Termination
-   6.1 This License may be terminated by the Licensor upon material breach by the Licensee if the Licensee fails to cure that breach within thirty (30) days of receiving written notice. Without prejudice to other rights, termination does not relieve the Licensee of its obligation to pay accrued, unpaid Royalties up to the effective date of termination.
+## 2. Grant of License
 
-7. Warranties, Disclaimers and Limits of Liability
-   7.1 Warranty: The Licensed Material is provided "AS IS". Licensor makes no express warranties; to the fullest extent permitted by law, Licensor disclaims implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.
-   7.2 Liability: In no event shall Licensor be liable for indirect, incidental, special, consequential, or punitive damages arising out of the use or inability to use the Licensed Material.
+Subject to the terms below, the Licensor grants a worldwide, non-exclusive, royalty-bearing license to use, reproduce, modify, distribute, and sublicense the Licensed Material.
 
-8. Compliance and Audit
-   8.1 The Licensor may request reasonable records to confirm Gross Revenue and Royalty payments and Licensee shall permit an independent auditor to inspect books and records once per year upon reasonable notice. Confidential business information may be protected under reasonable confidentiality terms during such an audit.
+## 3. Royalty Obligation
 
-9. Other Rights
-   9.1 The Licensor retains all copyrights, moral rights, and other intellectual property rights in the Licensed Material not expressly granted in this License.
+**3.1 Rate and Triggering Event**
 
-10. Governing Law
-   10.1 This License shall be governed by and construed in accordance with the laws chosen by the Licensor and made available in the project documentation (if no jurisdiction is specified, the parties should agree prior to use or consult counsel).
+A royalty of four percent (4%) of Gross Revenue is due whenever any commercial entity receives revenue from a product or service incorporating the Licensed Material. Individual developers and hobbyists using the Licensed Material for personal, academic, or non-commercial purposes owe no royalties. The moment you monetize, royalties are owed on all revenue from that product.
 
-11. Miscellaneous
-   11.1 If any clause of this License is held invalid or unenforceable, the remaining terms will continue in full force and effect.
+**3.2 Gross Revenue Calculation and Disputes**
 
-12. Acceptance
-   12.1 Use of the Licensed Material indicates acceptance of the terms of this License. If you do not accept these terms you must not use the Licensed Material.
+Gross Revenue shall be calculated and reported consistent with how the Licensee reports revenue to their primary tax authority. In case of dispute about what constitutes Gross Revenue, the parties will negotiate in good faith. If the parties cannot reach agreement, the calculation defaults to the methodology specified in Section 3.2(a) below.
+
+**3.2(a) Default Revenue Accounting Methodology**
+
+Where Gross Revenue cannot be determined by reference to the Licensee's tax authority reporting, the Licensor's standard revenue accounting methodology shall apply. This methodology is documented in the project repository and may be updated from time to time with thirty (30) days' notice to Licensees.
+
+**3.3 Reporting and Payment**
+
+Licensees shall maintain accurate records of Gross Revenue and remit royalty payments quarterly, within thirty (30) days of each quarter's end. Each payment must include a statement showing Gross Revenue and royalty calculation for that period.
+
+**3.4 Late Payment Interest**
+
+Any royalty payment not received within thirty (30) days of the quarterly due date accrues interest as follows:
+
+- **Year 1 (Months 1-12 of delinquency):** Interest accrues at the inflation rate and then 1% per annum, compounded quarterly, where inflation rate is determined by the Licensee's primary currency's official inflation rate (or if no official rate exists, as reported by the Licensor's standard economic reference).
+
+- **Year 2 (Months 13-24 of delinquency):** Interest accrues at the inflation rate and then 2% per annum, compounded quarterly.
+
+- **Year 3 (Months 25-36 of delinquency):** Interest accrues at the inflation rate and then 4% per annum, compounded quarterly.
+
+- **Year 4 and beyond (Month 37+):** Interest accrues at 8% per annum, compounded quarterly.
+
+All interest is calculated and compounded on the total outstanding balance (principal plus previously accrued interest) in accordance with these escalating rates. The Licensor's interpretation of inflation rate and calculation methodology shall be documented in the project repository.
+
+This structure provides reasonable accommodation for small operators and temporary hardship while creating meaningful disincentive for deliberate non-payment by established commercial entities.
+
+## 4. Attribution
+
+The Licensee shall preserve all copyright and attribution notices included in the Licensed Material. For any commercial product using the Licensed Material, include the following notice in prominent source code files:
+
+```
+/*
+ * Arc-9 Open Royalty Agreement
+ * Copyright (c) [LICENSOR NAME]
+ *
+ * This code incorporates Licensed Material covered by the Arc-9 Open Royalty Agreement.
+ * Commercial use is subject to a 4% royalty on Gross Revenue.
+ * See LICENSE for full details.
+ */
+```
+
+Do not remove, obscure, or alter these notices.
+
+## 5. Modifications
+
+Modified versions of the Licensed Material remain subject to royalty obligations when used commercially.
+
+## 6. Whistleblower Incentive
+
+**6.1 Bounty Structure**
+
+The Licensor offers a bounty to any individual reporting undisclosed commercial use or unpaid royalties. The whistleblower receives fifty percent (50%) of all amounts recovered by the Licensor, including unpaid royalties and accrued interest.
+
+**6.2 Reporting**
+
+Reports should be sent to the contact address in Section 7. The Licensor will maintain reasonable confidentiality regarding the whistleblower's identity to the extent permitted by law.
+
+**6.3 Scope**
+
+This incentive applies to all historical underpayments and applies regardless of the Licensee's current payment status.
+
+## 7. Contact and Notices
+
+All royalty payments and statements shall be sent to the Licensor at the contact details provided in the project repository or otherwise communicated by the Licensor.
+
+## 8. Disclaimers and Liability
+
+The Licensed Material is provided "AS IS" without any express warranties. To the fullest extent permitted by law, the Licensor disclaims implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. The Licensor is not liable for indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the Licensed Material.
+
+## 9. Intellectual Property
+
+The Licensor retains all copyrights, moral rights, and intellectual property rights in the Licensed Material not expressly granted by this license.
+
+## 10. Governing Law
+
+This Agreement shall be governed by the laws of [JURISDICTION TO BE SPECIFIED BY LICENSOR].
+
+## 11. Core Principle
+
+This agreement relies on economic incentives and voluntary compliance. Licensees are expected to pay their royalties honestly. Those who do not will eventually face discovery through the whistleblower system, where accumulated unpaid amounts—with compounding interest—create sufficient financial incentive for anyone with knowledge to report. Concealment becomes increasingly expensive over time. The tiered interest structure reflects this principle: temporary hardship receives reasonable accommodation, while deliberate non-payment is actively discouraged.
+
+## 12. Acceptance
+
+Use of the Licensed Material constitutes acceptance of these terms. By downloading, installing, or using the Licensed Material, you acknowledge that you have read this Agreement in its entirety and agree to be bound by its terms. Do not use the Licensed Material if you do not accept this Agreement.

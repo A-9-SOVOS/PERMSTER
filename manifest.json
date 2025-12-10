@@ -1,9 +1,18 @@
 {
   "manifest_version": 3,
   "name": "X Quality Score",
-  "version": "0.1.7",
+  "author": "A-9-SOVOS",
+  "version": "0.2.0",
   "description": "Shows the percentage of viewers who liked each post/reply on X (Twitter).",
   "icons": {"16": "icon16.png", "48": "icon48.png", "128": "icon128.png"},
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
@@ -15,5 +24,13 @@
       "run_at": "document_idle"
     }
   ],
-  "permissions": []
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }
